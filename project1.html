@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 | Ramsarvesh Maurya</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div id="preloader">
+        <div class="loader-text">LOADING PROJECT...</div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo">RAMSARVESH.</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li><button class="theme-toggle">☀️ Light</button></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <div class="project-header">
+        <h1>E-Commerce Platform</h1>
+        <p style="color: var(--text-muted);">A complete online shopping solution</p>
+    </div>
+
+    <div class="project-image">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+            alt="Project 1">
+    </div>
+
+    <div class="project-details">
+        <h2><i class="fas fa-info-circle"></i> Project Overview</h2>
+        <p>
+            This e-commerce platform was built to provide a seamless online shopping experience.
+            It includes features like product catalog, shopping cart, user authentication,
+            payment gateway integration, and order tracking.
+        </p>
+
+        <h2><i class="fas fa-list"></i> Features</h2>
+        <ul style="color: var(--text-muted); line-height: 2; padding-left: 20px;">
+            <li>User Registration & Authentication</li>
+            <li>Product Search & Filtering</li>
+            <li>Shopping Cart & Wishlist</li>
+            <li>Secure Payment Integration (Razorpay/Stripe)</li>
+            <li>Order Tracking & History</li>
+            <li>Admin Dashboard for Management</li>
+            <li>Responsive Design for All Devices</li>
+        </ul>
+
+        <h2><i class="fas fa-tools"></i> Technologies Used</h2>
+        <div class="tech-stack">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">React.js</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">Express</span>
+            <span class="tech-badge">Razorpay</span>
+        </div>
+
+        <h2><i class="fas fa-challenges"></i> Challenges & Solutions</h2>
+        <p>
+            <strong>Challenge:</strong> Implementing secure payment gateway.<br>
+            <strong>Solution:</strong> Integrated Razorpay with proper encryption and validation.
+        </p>
+        <p>
+            <strong>Challenge:</strong> Managing cart state across pages.<br>
+            <strong>Solution:</strong> Used Redux for state management.
+        </p>
+
+        <div class="project-links">
+            <a href="#" class="btn-cyber" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="#" class="btn-secondary" target="_blank">
+                <i class="fab fa-github"></i> GitHub Repo
+            </a>
+            <a href="projects.html" class="btn-cyber">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+        </div>
+    </div>
+
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer>
+        <p>©Copyright 2026 - Made By Ramsarvesh Maurya</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

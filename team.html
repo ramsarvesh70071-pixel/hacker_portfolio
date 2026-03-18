@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ramsarvesh Maurya - Team Members">
+    <meta name="keywords" content="Team, Portfolio, Web Development Team">
+    <meta name="author" content="Ramsarvesh Maurya">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Team | Ramsarvesh Maurya">
+    <meta property="og:description" content="Meet our talented team members">
+    <meta property="og:image" content="assets/og-image.jpg">
+
+    <title>Ramsarvesh Maurya | Team</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Team Page Specific Style for Full Image -->
+    <style>
+        .team-card img {
+            height: 400px !important;
+            object-fit: contain !important;
+            background: #1a1a1a;
+            border: 2px solid rgba(0, 242, 255, 0.3);
+        }
+
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .team-social a {
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .team-social a:hover {
+            background: var(--primary);
+            color: #000;
+            box-shadow: 0 0 20px var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-text">LOADING TEAM...</div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo">RAMSARVESH.</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li><button class="theme-toggle">☀️ Light</button></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" style="height: 60vh;">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1>OUR<br/>TEAM</h1>
+            <p>Meet the talented people behind the success</p>
+        </div>
+    </header>
+
+    <!-- Team Section -->
+    <section id="team">
+        <h2 class="section-title">TEAM MEMBERS</h2>
+        <p class="section-subtitle">The brilliant minds working together</p>
+
+        <div class="grid-container">
+            <!-- Team Member 1 -->
+            <div class="card team-card">
+                <img src="assets/images/img3.jpeg" alt="Ramsarvesh Maurya">
+                <h3>Ramsarvesh Maurya</h3>
+                <p style="color: var(--secondary); font-weight: 600; margin-bottom: 10px;">Founder & Lead Developer</p>
+                <p>King of digital world. Expert in full-stack development with 5+ years of experience.</p>
+                <div class="team-social">
+                    <a href="https://www.linkedin.com/in/ramsarvesh-maurya-720191353/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ramsarvesh70071-pixel" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="card team-card">
+                <img src="assets/images/img2.png" alt="Ramsarvesh Maurya">
+                <h3>Ramsarvesh Maurya</h3>
+                <p style="color: var(--secondary); font-weight: 600; margin-bottom: 10px;">Founder & Lead Developer</p>
+                <p>King of digital world. Expert in full-stack development with 5+ years of experience.</p>
+                <div class="team-social">
+                    <a href="https://www.linkedin.com/in/ramsarvesh-maurya-720191353/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ramsarvesh70071-pixel" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="card team-card">
+                <img src="assets/images/img1.jpg" alt="Ramsarvesh Maurya">
+                <h3>Ramsarvesh Maurya</h3>
+                <p style="color: var(--secondary); font-weight: 600; margin-bottom: 10px;">Founder & Lead Developer</p>
+                <p>King of digital world. Expert in full-stack development with 5+ years of experience.</p>
+                <div class="team-social">
+                    <a href="https://www.linkedin.com/in/ramsarvesh-maurya-720191353/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ramsarvesh70071-pixel" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="card team-card">
+                <img src="assets/images/img4.jpg" alt="Ramsarvesh Maurya">
+                <h3>Ramsarvesh Maurya</h3>
+                <p style="color: var(--secondary); font-weight: 600; margin-bottom: 10px;">Founder & Lead Developer</p>
+                <p>King of digital world. Expert in full-stack development with 5+ years of experience.</p>
+                <div class="team-social">
+                    <a href="https://www.linkedin.com/in/ramsarvesh-maurya-720191353/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ramsarvesh70071-pixel" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Team Member 5 -->
+            <div class="card team-card">
+                <img src="assets/images/img5.jpg" alt="Ramsarvesh Maurya">
+                <h3>Ramsarvesh Maurya</h3>
+                <p style="color: var(--secondary); font-weight: 600; margin-bottom: 10px;">Founder & Lead Developer</p>
+                <p>King of digital world. Expert in full-stack development with 5+ years of experience.</p>
+                <div class="team-social">
+                    <a href="https://www.linkedin.com/in/ramsarvesh-maurya-720191353/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ramsarvesh70071-pixel" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Team Member 6 -->
+            <div class="card team-card">
+                <img src="assets/images/img1.jpg" alt="Ramsarvesh Maurya">
+                <h3>Ramsarvesh Maurya</h3>
+                <p style="color: var(--secondary); font-weight: 600; margin-bottom: 10px;">Founder & Lead Developer</p>
+                <p>King of digital world. Expert in full-stack development with 5+ years of experience.</p>
+                <div class="team-social">
+                    <a href="https://www.linkedin.com/in/ramsarvesh-maurya-720191353/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ramsarvesh70071-pixel" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section
+        style="text-align: center; padding: 100px 50px; background: linear-gradient(135deg, rgba(0, 242, 255, 0.1), rgba(112, 0, 255, 0.1));">
+        <h2 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px;">Want to Join Our Team?</h2>
+        <p
+            style="color: var(--text-muted); margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+            We're always looking for talented individuals to join our growing team. Check out our open positions.
+        </p>
+        <a href="contacts.html" class="btn-cyber">
+            <i class="fas fa-paper-plane"></i> Get in Touch
+        </a>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/yourprofile" class="social-link linkedin" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/yourprofile" class="social-link github" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/yourprofile" class="social-link twitter" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/yourprofile" class="social-link instagram" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p>©Copyright 2026 - Made By Ramsarvesh Maurya</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
