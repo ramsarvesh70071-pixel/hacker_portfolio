@@ -189,42 +189,42 @@ function initAnimations() {
 }
 
 // ========== PARTICLES.JS - BRIGHT & VIBRANT ==========
+// ========== PARTICLES.JS - BRIGHT & VIBRANT (FIXED FOR ALL SCREENS) ==========
 function initParticles() {
     if (typeof particlesJS !== 'undefined') {
-        // Mobile optimized check
-        const isMobile = window.innerWidth < 768;
-        
+
+        // Humne isMobile wala check hata diya hai taaki sab jagah same dikhe
         particlesJS('particles-js', {
             particles: {
-                number: { 
-                    value: isMobile ? 40 : 100,
-                    density: { enable: true, value_area: isMobile ? 800 : 700 }
+                number: {
+                    value: 100, // Mobile par bhi ab 100 particles dikhenge
+                    density: { enable: true, value_area: 800 }
                 },
                 color: { value: ['#00f2ff', '#7000ff', '#ffd700'] },
-                shape: { 
+                shape: {
                     type: 'circle',
                     stroke: { width: 2, color: '#00f2ff' }
                 },
-                opacity: { 
+                opacity: {
                     value: 0.8,
                     random: true,
                     anim: { enable: true, speed: 1, opacity_min: 0.4, sync: false }
                 },
-                size: { 
-                    value: isMobile ? 2 : 4,
+                size: {
+                    value: 4, // Particle ka size bada kar diya (Mobile/Desktop dono ke liye)
                     random: true,
                     anim: { enable: true, speed: 2, size_min: 2, sync: false }
                 },
                 line_linked: {
                     enable: true,
-                    distance: isMobile ? 120 : 180,
+                    distance: 180, // Jaal ka gap (connections) bada rakha hai
                     color: '#00f2ff',
                     opacity: 0.6,
-                    width: isMobile ? 1 : 2
+                    width: 2
                 },
                 move: {
                     enable: true,
-                    speed: isMobile ? 1.5 : 3,
+                    speed: 3, // Movement speed fast rakhi hai
                     direction: 'none',
                     random: true,
                     straight: false,
@@ -241,15 +241,14 @@ function initParticles() {
                     resize: true
                 },
                 modes: {
-                    grab: { distance: isMobile ? 100 : 200, line_linked: { opacity: 1 } },
-                    push: { particles_nb: isMobile ? 2 : 5 }
+                    grab: { distance: 200, line_linked: { opacity: 1 } },
+                    push: { particles_nb: 5 }
                 }
             },
             retina_detect: true
         });
     }
 }
-
 // ========== MAGNETIC BUTTONS ==========
 const buttons = document.querySelectorAll('.btn-cyber, .btn-secondary, .submit-btn, .download-resume-btn');
 buttons.forEach(btn => {
