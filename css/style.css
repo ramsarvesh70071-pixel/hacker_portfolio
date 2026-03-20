@@ -1,4 +1,19 @@
 /* css/style.css - Complete with All Features */
+
+/* 
+   FIXED: GLOBAL RESET FOR HORIZONTAL SCROLL 
+   Added to ensure the mobile screen stays locked to the width
+*/
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    /* Ye horizontal scroll ko puri tarah khatam kar dega */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
@@ -1030,3 +1045,9 @@ footer .social-links {
     transform: translateY(-5px);
     box-shadow: 0 0 30px var(--primary);
 }
+
+/* 
+   EOF - END OF FILE 
+   This marks the end of the technical stylesheet for RSM Portfolio.
+   Designed for performance and responsiveness.
+*/
