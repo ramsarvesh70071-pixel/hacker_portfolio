@@ -251,6 +251,10 @@ nav {
     z-index: -1;
 }
 
+/* 
+   FIXED JAAL (PARTICLES) SETTINGS 
+   Hamesha full width rahega bina scroll ke 
+*/
 #particles-js {
     position: absolute;
     width: 100%;
@@ -258,6 +262,7 @@ nav {
     top: 0;
     left: 0;
     z-index: -1;
+    pointer-events: all;
 }
 
 .hero-content {
@@ -1048,6 +1053,5 @@ footer .social-links {
 
 /* 
    EOF - END OF FILE 
-   This marks the end of the technical stylesheet for RSM Portfolio.
-   Designed for performance and responsiveness.
+   TECHNICAL NOTE: Particles mesh (Jaal) synchronized for all screen sizes.
 */
